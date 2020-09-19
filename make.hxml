@@ -1,0 +1,9 @@
+-D AKJ_DEBUG
+-lib howlerjs
+-p /DevProjects/Repos/glewb/src/common
+-p /DevProjects/Repos/glewb/src/js
+-lib pecan
+-cp src
+--main Main
+--js bin/game.js
+# --macro glewb.asset.Packer.run("png", "bin/png.glw")
