@@ -1,4 +1,4 @@
--D AKJ_DEBUG
+# -D AKJ_DEBUG
 -lib howlerjs
 -p /DevProjects/Repos/glewb/src/common
 -p /DevProjects/Repos/glewb/src/js

@@ -1,2 +1,3 @@
 --macro glewb.asset.Packer.run("png", "bin/png.glw")
 --macro glewb.asset.Packer.run("shade", "bin/shade.glw")
+--macro glewb.asset.Packer.run("sfx", "bin/wav.glw")

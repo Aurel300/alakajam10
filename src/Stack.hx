@@ -12,6 +12,9 @@ class Stack {
 
   public var id:String;
   public var regions:Array<Region>;
+  public var zDensity:Float = 2;
+  public var side:Bool = false;
+  public var doubleSided:Bool = false;
 
   public function new(id:String, regions:Array<Region>) {
     STACKS[id] = this;
@@ -19,14 +22,12 @@ class Stack {
     this.regions = regions;
   }
 
-  public function render():Void {
-    for (ri in 0...regions.length) {
-      var layer = regions.length - ri - 1;
-      regions[layer].render();
-    }
+  public function place(x:Float, y:Float, z:Float, angle:Float):StackP {
+    var ret = new StackP(this);
+    ret.x = x;
+    ret.y = y;
+    ret.z = z;
+    ret.angle = angle;
+    return ret;
   }
-
-  //public function place():StackP { //?
-  //  
-  //}
 }
